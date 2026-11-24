@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Checkout | Haven Market</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<div class="announcement">Almost yours — complete your order below</div>
+<header class="site-header"><nav class="navbar container"><a class="logo" href="index.html">HAVEN<span>.</span></a><a class="nav-back" href="cart.html">← Back to cart</a><a class="cart-link" href="cart.html">Cart <span class="cart-count">0</span></a></nav></header>
+<main class="container section">
+  <div class="page-heading"><p class="eyebrow">SECURE CHECKOUT</p><h1>Delivery details</h1><p>Fill in your information to complete this demo checkout.</p></div>
+  <div class="checkout-layout">
+    <form id="checkout-form" class="form-card">
+      <h2>Contact information</h2>
+      <div class="form-grid"><div class="form-group full-span"><label for="customer-name">Full name</label><input class="form-control" id="customer-name" name="name" type="text" minlength="3" maxlength="70" required></div>
+      <div class="form-group"><label for="customer-email">Email address</label><input class="form-control" id="customer-email" name="email" type="email" required></div>
+      <div class="form-group"><label for="customer-phone">Phone number</label><input class="form-control" id="customer-phone" name="phone" type="tel" pattern="[+0-9() -]{7,20}" minlength="7" maxlength="20" placeholder="+92 300 1234567" required></div>
+      <div class="form-group full-span"><label for="customer-address">Street address</label><input class="form-control" id="customer-address" name="address" type="text" minlength="8" maxlength="150" required></div>
+      <div class="form-group"><label for="customer-city">City</label><input class="form-control" id="customer-city" name="city" type="text" minlength="2" maxlength="50" required></div>
+      <div class="form-group"><label for="postal-code">Postal code</label><input class="form-control" id="postal-code" name="postalCode" type="text" minlength="4" maxlength="10" required></div></div>
+      <h2 class="payment-title">Payment method</h2>
+      <div class="payment-options"><label class="payment-option"><input type="radio" name="payment" value="Cash on delivery" checked> Cash on delivery</label><label class="payment-option"><input type="radio" name="payment" value="Bank transfer"> Bank transfer (demo)</label></div>
+      <button class="btn btn-full" type="submit">Place demo order</button><p class="form-message" aria-live="polite"></p>
+    </form>
+    <aside class="summary-card"><h2>Order summary</h2><div id="checkout-summary"></div></aside>
+  </div>
+</main>
+<footer class="footer"><div class="container footer-inner"><a class="logo" href="index.html">HAVEN<span>.</span></a><p>© 2026 Haven Market. Student front-end project.</p></div></footer>
+<script src="js/products.js"></script><script src="js/main.js"></script></body></html>
